@@ -6,7 +6,7 @@
   tasks:
   - file: name=/home/ansible/pull.txt state=touch
   - file: name=/home/ansible/{{ list }}.txt state=touch
-    with_lists:
-    -text1
-    -test
-    -get
+    with_list:
+    - text1
+    - test
+    - get
