@@ -1,0 +1,8 @@
+---
+
+- hosts localhost
+  gather_facts: no
+  become: yes
+  tasks:
+  - file: name=/home/ansible/pull.txt state=touch
+
